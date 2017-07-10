@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Formintech.Model
 {
-    class OpenQuestion : QuestionBase
+    public class OpenQuestion : QuestionBase
     {
     }
 }

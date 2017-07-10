@@ -1,18 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Formintech.Model
 {
     public class Form
     {
-        string _name;
+        private QuestionRoot _questionRoot;
 
+        public string Title { get => Question.Title; set => Question.Title = value; }
+        public QuestionRoot Question { get => _questionRoot; set => _questionRoot = value; }
 
-
-        public Form(string name)
+        public Form()
         {
-            Name = name;
+            _questionRoot = new QuestionRoot(this);
         }
 
-        public string Name { get; set; }
     }
 }
